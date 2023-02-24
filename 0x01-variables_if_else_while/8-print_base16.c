@@ -1,27 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <ctype.h>
-#include <string.h>
 /**
- * main - Entry point
- * Description: 'prints alphabet in reverse'
- * Return: Always 0 (success)
+ * main - entry point
+ *
+ * Return: 0
+ *
  */
 int main(void)
 {
-	int num;
-	char j;
-
-	for (num = 0; num < 10; num++)
+	char ch = 'a';
+	int i = 48;
+	/* your code goes there */
+	while (i < 58)
 	{
-		putchar(48 + num);
+		putchar(i);
+		i++;
 	}
-	for (j = 'A'; j <= 'F'; j++)
+	i = 0;
+	while (i < 6)
 	{
-		putchar(tolower(j));
+		putchar(ch);
+		ch++;
+		i++;
 	}
-	putchar('\n');
 	putchar('\n');
 	return (0);
 }
