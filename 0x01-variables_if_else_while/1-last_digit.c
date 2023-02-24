@@ -1,24 +1,27 @@
- #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - Prints the last digit stored in th variable n
- * Return: Always 0 (success)
+ * main - entry point
+ *
+ * Return: 0
  */
 int main(void)
 {
-	int n, lastDgt;
+	int n;
+	int L;
+	char str[] = "Last digit of";
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastD = n % 10;
-	if (lastD > 5)
-	{
-	printf("Last digit of %i is %i and is greater than 5\n", n, lastD);
-	}
-	else if (lastD < 6 && lastD != 0)
-	{
-		printf("Last digit of %i is %i and is 0\n", n, lastD);
-	}
+	L = n % 10;
+
+	if (L > 5)
+		printf("%s %d is %d and is greater than 5\n", str, n, L);
+	else if (L == 0)
+		printf("%s %d is %d and is 0\n", str, n, L);
+	else if (L < 6)
+		printf("%s %d is %d and is less than 6 and not 0\n", str, n, L);
+
 	return (0);
 }
