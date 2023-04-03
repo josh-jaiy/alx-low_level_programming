@@ -8,8 +8,7 @@
 * struct listint_s - singly linked list
 * @n: integer
 * @next: points to the next node
-* for alx project
-
+*
 * Description: singly linked list node structure
 *
 */
